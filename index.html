@@ -15,7 +15,6 @@
     <img class="header__image" src="./eisenhower-matrix.jpg" alt="eisenhower-matrix-image">
     <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details</a>
   </header>
-
   <main class="main">
     <section class="add-item">
       <!-- topSectionForAddingElementToList"> -->
@@ -27,16 +26,13 @@
         <button class="item__button button">Add</button>
       </div>
     </section>
-
     <section class="todo">
       <h3 class="todo__title">Todo</h3>
       <ul class="incompleted-tasks">
         <li class="incompleted-tasks__item item">
           <input type="checkbox" class="item__checkbox">
-          <!-- task -->
           <label class="item__label item__label-edit">Pay Bills</label>
-          <!-- task -->
-          <input type="text" class="item__input item__input-edit">
+          <input type="text" class="item__input">
           <button class="button item__edit edit">Edit</button>
           <button class="button item__delete delete">
             <img class="item__delete-img" src="./remove.svg" alt="">
@@ -53,16 +49,13 @@
         </li>
       </ul>
     </section>
-
     <section class="completed">
       <h3 class="completed__title">Completed</h3>
       <ul class="completed-tasks">
         <li class="completed-tasks__item item">
           <input type="checkbox" checked class="item__checkbox">
-          <!-- task -->
-          <label class="item__label item__label-done">See the Doctor</label>
-          <!-- task -->
-          <input type="text" class="item__input item__input-edit">
+          <label class="item__label">See the Doctor</label>
+          <input type="text" class="item__input">
           <button class="button item__edit edit">Edit</button>
           <button class="button item__delete delete">
             <img class="item__delete-img" src="./remove.svg" alt="">
@@ -71,6 +64,7 @@
       </ul>
     </section>
   </main>
+  <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>

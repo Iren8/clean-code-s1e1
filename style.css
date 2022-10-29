@@ -58,7 +58,6 @@ h3 {
   margin: 0;
   text-transform: uppercase;
 }
-/* input[type="text"]*/
 .item__input {
   margin: 0;
   font-size: 18px;
@@ -72,7 +71,6 @@ h3 {
   color: #888;
   flex: 1 0 auto;
   display: inline-block;
-  width: 226px;
 }
 .item__input:focus {
   color: #333;
@@ -91,18 +89,27 @@ h3 {
   margin: 0 10px;
 }
 .item__label {
-  display: none;
+  display: flex;
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
-}
-.item__label-edit{
-  display: block;
   flex: 1 0 auto;
 }
-.item__input-edit{
-  display: none;  
+.item__edit{
+  display: inline-block;
+  flex: 1 0 auto;
+}
+.incompleted-tasks .item__input {
+  display: none;
+}
+.incompleted-tasks .edit-mode .item__input,
+.completed .edit-mode .item__input {
+  display: inline-block;
+}
+.incompleted-tasks .edit-mode .item__label,
+.completed .edit-mode .item__label {
+  display: none;
 }
 .item__delete-img {
   height: 2em;
@@ -112,10 +119,13 @@ h3 {
 .item__delete-img:hover {
   transform: rotateZ(0);
 }
-.item__label-done {
+.completed .item__label {
   text-decoration: line-through;
   color: #888;
   display: flex;
   flex: 1 0 auto;
   width: 226px;
+}
+.completed-tasks .item__input{
+  display: none;
 }
